@@ -2,6 +2,8 @@
 
 ROOTPATH=${1:-~/cloudprinter}
 
+echo "p0=$ROOTPATH"
+
 safeUpgrade()
 {
         echo "Checking git status of $ROOTPATH..."
