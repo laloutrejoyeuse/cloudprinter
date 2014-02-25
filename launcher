@@ -2,14 +2,10 @@
 
 ROOTPATH=${1:-~/cloudprinter}
 
-echo "p0=$ROOTPATH"
-
 safeUpgrade()
 {
-        echo "Checking git status of $ROOTPATH..."
-        if [ -p "$ROOTPATH" ]; then 
+        if [ -d "$ROOTPATH" ]; then 
                 cd $ROOTPATH
-                echo "Test"
                 
                 # fetch changes, git stores them in FETCH_HEAD
                 git fetch
