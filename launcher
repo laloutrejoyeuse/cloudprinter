@@ -39,6 +39,7 @@ if [ -f $ROOTPATH/service.py ]; then
         exec /bin/python $ROOTPATH/service.py
 fi
 
+# anti-short cycle
 /bin/sleep 15
 
                 
