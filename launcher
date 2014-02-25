@@ -4,7 +4,7 @@ ROOTPATH=${1:-~/cloudprinter}
 
 safeUpgrade()
 {
-        if [ -p "$ROOTPATH"]; then 
+        if [ -p "$ROOTPATH" ]; then 
                 cd $ROOTPATH
                 
                 # fetch changes, git stores them in FETCH_HEAD
