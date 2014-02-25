@@ -35,8 +35,8 @@ safeUpgrade()
 
 safeUpgrade
 
-if [ -f $ROOTPATH/launcher ]; then
-        exec /bin/sh $LOCALPATH/launcher
+if [ -f $ROOTPATH/service.py ]; then
+        exec /bin/python $ROOTPATH/service.py
 fi
 
 /bin/sleep 15
